@@ -1,11 +1,16 @@
 echo
 echo "Installing Git and associated tools"
 brew install git
+
+# Large File Store
+brew install git-lfs
+set +e
+git lfs install
+git lfs install --system
+set -e
+
 brew tap git-duet/tap
 brew install git-duet
-brew install git-pair
-brew install git-together
-brew install git-author
 brew install vim
 
 brew cask install rowanj-gitx

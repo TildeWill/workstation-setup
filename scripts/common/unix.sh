@@ -10,3 +10,15 @@ brew install wget
 
 # For developers of shell scripts
 brew install jq
+
+# Redis
+brew install redis
+brew services start redis
+
+# RabbitMQ
+brew install rabbitmq
+brew services start rabbitmq
+
+# Memcached
+brew install memcached
+brew services start memcached
