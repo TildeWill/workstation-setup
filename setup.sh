@@ -43,4 +43,5 @@ done
 source ${MY_DIR}/scripts/common/finished.sh
 
 #TODO: Just use git-duet
+#TODO: Use rvm instead of rbenv :\
 #TODO: Fail/prompt if no team is specified?
