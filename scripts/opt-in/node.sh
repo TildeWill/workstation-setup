@@ -2,7 +2,7 @@ echo
 echo "Installing Node Version Manager (nvm)"
 brew install nvm
 mkdir -p ~/.nvm
-cp files/nvm.bash ~/.bash_it/custom
+cp -f files/nvm.bash ~/.bash_it/custom/
 
 echo "Loading nvm into the current shell"
 set +e
