@@ -16,10 +16,6 @@ brew install jq
 brew install redis
 brew services start redis
 
-# RabbitMQ
-brew install rabbitmq
-brew services start rabbitmq
-
 # Memcached
 brew install memcached
 brew services start memcached
