@@ -44,3 +44,4 @@ source ${MY_DIR}/scripts/common/finished.sh
 
 #TODO: Just use git-duet
 #TODO: Fail/prompt if no team is specified?
+#TODO: Re-enable golang and rubymine scripts
