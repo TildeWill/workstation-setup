@@ -5,6 +5,7 @@ source ${MY_DIR}/scripts/opt-in/node.sh
 #source ${MY_DIR}/scripts/opt-in/golang.sh
 source ${MY_DIR}/scripts/opt-in/docker.sh
 source ${MY_DIR}/scripts/opt-in/postgres.sh
+source ${MY_DIR}/scripts/opt-in/qt.sh
 
 # Code Editors
 #source ${MY_DIR}/scripts/opt-in/rubymine.sh
