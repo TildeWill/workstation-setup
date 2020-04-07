@@ -14,23 +14,23 @@ done
 echo "Postgres started!"
 
 set +e
-    psql -d postgres -c "CREATE USER stitchfix_owner WITH PASSWORD 'stitchfix_owner';"
-    psql -d postgres -c "ALTER USER stitchfix_owner createdb;"
+    psql -d postgres -c "CREATE USER geometer_owner WITH PASSWORD 'geometer_owner';"
+    psql -d postgres -c "ALTER USER geometer_owner createdb;"
 
     #  Eventually this user will need to access the test database and have superuser
     #  privileges, so go ahead and set that up:
-    #  NOTE: Previously this user was called "stitchfix_production" and there may be
+    #  NOTE: Previously this user was called "geometer_production" and there may be
     #  some tools that rely upon this. If you encounter any, we should adjust them
     #  to use the new convention.
-    psql -d postgres -c "ALTER USER stitchfix_owner with SUPERUSER;"
+    psql -d postgres -c "ALTER USER geometer_owner with SUPERUSER;"
 
-    #  NOTE: Previously this database was also called "stitchfix_production" and
+    #  NOTE: Previously this database was also called "geometer_production" and
     #  there may be some tools that still rely upon this. If you encounter any,
     #  we should adjust them to use the new convention.
-    #  NOTE: Some apps may look for stitchfix_development. You can update an environment
+    #  NOTE: Some apps may look for geometer_development. You can update an environment
     #  variable to point to the correct database in this case.
-    psql -d postgres -c "CREATE DATABASE stitchfix_dev OWNER stitchfix_owner;"
-    psql -d postgres -c "CREATE DATABASE stitchfix_test OWNER stitchfix_owner;"
+    psql -d postgres -c "CREATE DATABASE geometer_dev OWNER geometer_owner;"
+    psql -d postgres -c "CREATE DATABASE geometer_test OWNER geometer_owner;"
 set -e
 
 brew cask install pgadmin4
