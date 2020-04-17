@@ -40,6 +40,8 @@ brew cask install macvim
 brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
 brew cask install atom
+brew cask install monitorcontrol
+brew cask install spectacle
 
 # For each command line argument, try executing the corresponding script in opt-in/
 for var in "$@"
