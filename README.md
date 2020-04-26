@@ -39,28 +39,33 @@ git clone https://github.com/TildeWill/workstation-setup.git
 cd workstation-setup
 ```
 
-### Engineering Machine
+### Machine Setup
 
 If you're setting up an engineering machine choose team config to install:
 
 ```sh
-# For Labs developers (remove unnecessary languages when running command)
-./setup.sh kufak
+./setup.sh
 ```
+
+To also install team-specific dependencies, include the team name as an argument,
+where the name matches the filename, without the extension, in `scripts/teams` 
+
+```sh
+./setup.sh geometer-dev
+```
+
+You can also include multiple "teams", eg:
+
+```sh
+./setup.sh geometer-dev project-voter
+```
+
 
 ## Having problems?
 
 If you're having problems using the setup script, please let us know by [opening an issue](https://github.com/pivotal/workstation-setup/issues/new).
 
 If you see errors from `brew`, try running `brew doctor` and include the diagnostic output in your issue submission.
-
-## Customizing
-
-If you'd like to customize this project for a project's use:
-
-- Fork the project
-- Edit the shells scripts to your liking
-- Profit
 
 ## Frequently Asked Questions
 
