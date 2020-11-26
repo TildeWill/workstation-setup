@@ -28,7 +28,7 @@ source ${MY_DIR}/scripts/configuration-osx.sh
 source ${MY_DIR}/scripts/configurations.sh
 source ${MY_DIR}/scripts/ssh.sh
 
-source ${MY_DIR}/scripts/ruby-rvm.sh
+#source ${MY_DIR}/scripts/ruby-rvm.sh
 source ${MY_DIR}/scripts/node.sh
 #source ${MY_DIR}/scripts/golang.sh
 source ${MY_DIR}/scripts/docker.sh
@@ -36,7 +36,7 @@ source ${MY_DIR}/scripts/postgres.sh
 
 # Code Editors
 #source ${MY_DIR}/scripts/rubymine.sh
-brew cask install macvim
+#brew cask install macvim
 brew cask install jetbrains-toolbox
 brew cask install visual-studio-code
 brew cask install atom
@@ -56,7 +56,7 @@ do
     fi
 done
 
-source ${MY_DIR}/scripts/common/finished.sh
+source ${MY_DIR}/scripts/finished.sh
 
 #TODO: Just use git-duet
 #TODO: fix postgres script to take an argument for company/user/whatever

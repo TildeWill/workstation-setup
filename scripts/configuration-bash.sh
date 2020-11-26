@@ -9,7 +9,7 @@ rm -rf ~/.bash_it
 git clone https://github.com/Bash-it/bash-it.git ~/.bash_it
 cp files/add_user_initials_to_git_prompt_info.bash ~/.bash_it/custom
 cp files/stitch_fix_theme/stitch_fix_theme.theme.bash ~/.bash_it/themes/bobby/bobby.theme.bash
-~/.bash_it/install.sh --silent
+pushd ~/.bash_it && ./install.sh --silent && popd
 source ~/.bash_profile
 source ~/.bash_it/bash_it.sh
 bash-it enable completion git

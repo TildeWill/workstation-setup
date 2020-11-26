@@ -23,6 +23,4 @@ npm install --global webpack
 npm install --global grunt-cli
 npm install --global gulp-cli
 
-brew install yarn --ignore-dependencies
-
 cp -f files/npm_key.bash ~/.bash_it/custom/
