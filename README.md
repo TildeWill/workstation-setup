@@ -32,6 +32,7 @@ This project does not aim to do everything. Some examples:
 Open up Terminal.app and run the following commands:
 
 ```sh
+chsh -s /bin/bash #change the default shell to bash otherwise OSX's default is zsh
 mkdir -p ~/workspace
 cd ~/workspace
 git clone https://github.com/TildeWill/workstation-setup.git
