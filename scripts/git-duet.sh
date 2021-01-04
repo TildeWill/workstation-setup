@@ -1,3 +1,7 @@
+# The Co-authored By trailer gets added on by a prepare-commit-msg hook
+# vs. the Signed-off-by trailer which gets added via duet-commit etc.
+# You probably don't want both
+
 brew install git-duet/tap/git-duet
 
 cat <<-EOF > ~/.bash_it/custom/git-duet.bash
@@ -13,9 +17,5 @@ authors:
 email_template: '{{.Username}}'
 EOF
 
-# avoid duplicate Co-authored-by trailers
+# avoid duplicate Co-authored-by trailers when editing commits
 git config --global trailer.ifexists addIfDifferent
-
-# install a wrapper for use in JetBrains IDEs
-curl -Ls -o /usr/local/bin/jetbrains-git-wrapper https://raw.github.com/git-duet/git-duet/master/scripts/jetbrains-git-wrapper
-chmod +x /usr/local/bin/jetbrains-git-wrapper
