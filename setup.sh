@@ -20,6 +20,7 @@ source ${MY_DIR}/scripts/homebrew.sh
 source ${MY_DIR}/scripts/configuration-bash.sh
 
 source ${MY_DIR}/scripts/git.sh
+source ${MY_DIR}/scripts/git-duet.sh
 source ${MY_DIR}/scripts/git-aliases.sh
 source ${MY_DIR}/scripts/applications-common.sh
 source ${MY_DIR}/scripts/unix.sh
