@@ -29,7 +29,7 @@ source ${MY_DIR}/scripts/configuration-osx.sh
 source ${MY_DIR}/scripts/configurations.sh
 source ${MY_DIR}/scripts/ssh.sh
 
-#source ${MY_DIR}/scripts/ruby-rvm.sh
+source ${MY_DIR}/scripts/asdf.sh
 source ${MY_DIR}/scripts/node.sh
 #source ${MY_DIR}/scripts/golang.sh
 source ${MY_DIR}/scripts/docker.sh
